@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Jewelry</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1> Order Exquisite Jewelry </h1>
+        <h2>Discover our elegant collection of handcrafted jewelry.</h2>
+    </header>
+    <main>
+       <img src="/image.jpg" width="1400px"height="800px">
+    </main>
+    <section>
+        <h2>Our Collection</h2>
+        <p>Choose from a variety of jewelry types and designs:</p>
+        <ul>
+            <li>Necklaces</li>
+            <li>Bracelets</li>
+            <li>Rings</li>
+            <li>Earrings</li>
+        </ul>
+      
+        <p><a href="#order-form">Order Now</a></p>
+    </section>
+    <section id="order-form">
+        <h2>Place Your Order</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="jewelry-type">Select Jewelry Type:</label>
+            <select id="jewelry-type" name="jewelry-type">
+                <option value="necklace">Necklace</option>
+                <option value="bracelet">Bracelet</option>
+                <option value="ring">Ring</option>
+                <option value="earring">Earring</option>
+            </select><br><br>
+            <button type="button" onclick="placeOrder()">Place Order</button>
+        </form>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
