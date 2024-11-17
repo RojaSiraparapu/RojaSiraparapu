@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Cakes & Bakery Products</title>
+    <link rel="stylesheet" href="bakery.css">
+</head>
+<body>
+    <header>
+        <h1>Order Cakes & Bakery Products</h1>
+    </header>
+    <main>
+        <!-- User Details Section -->
+        <section id="user-details">
+            <h2>Enter Your Order Details</h2>
+            <form id="order-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="cake">Preferred Cake Type:</label>
+                <select id="cake" name="cake" required>
+                    <option value="Chocolate">Chocolate</option>
+                    <option value="Vanilla">Vanilla</option>
+                    <option value="Red Velvet">Red Velvet</option>
+                    <option value="Cheesecake">Cheesecake</option>
+                </select>
+                
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" required>
+                
+                <label for="message">Special Instructions:</label>
+                <textarea id="message" name="message"></textarea>
+                
+                <button type="button" id="submit-order">Submit</button>
+            </form>
+            <p id="order-summary"></p>
+        </section>
+
+        <!-- Quiz Section -->
+        <section id="quiz">
+            <h2>Cakes & Bakery Quiz</h2>
+            <div id="quiz-container">
+                <p id="quiz-question"></p>
+                <div id="quiz-options"></div>
+            </div>
+            <p id="quiz-progress"></p>
+            <p id="quiz-result"></p>
+        </section>
+
+        <!-- API Fetch Section -->
+        <section id="api-fetch">
+            <h2>Get a Cake Recipe</h2>
+            <button id="fetch-recipe">Fetch Recipe</button>
+            <p id="recipe-display">Click the button to see a cake recipe idea!</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Bakery Order App</p>
+    </footer>
+    <script src="bakery.js"></script>
+</body>
+</html>
